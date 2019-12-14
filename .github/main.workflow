@@ -19,7 +19,7 @@ action "Check" {
 action "Run UI Tests" {
   needs = ["Build"]
   secrets = ["FABRIC_API_KEY", "FABRIC_API_SECRET"]
-  uses = "vgaidarji/android-github-actions/emulator@v1.0.0"
+  uses = "vgaidarji/android-github-actions/emulator@test-emulator-fix"
 }
 
 action "Distribute" {
